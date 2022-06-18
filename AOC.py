@@ -7,9 +7,12 @@ print(3.14*radius**2)
 
 
 filename=input("input the filename:")
-f_extns=filename.split(".")
+name,ext=os.path.splitext(filename)
+ext_with_dot=ext[1: ]
+print("the extension of file is: " + ext)
 
-print ("the extension of file is:"+repr(f_extns[-1]))
+
+
 
 
 
